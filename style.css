@@ -1,0 +1,98 @@
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+body {
+    background-color: #171717;
+    color: #E7E7E7;
+    font-family: 'Roboto Mono', monospace;
+    cursor: crosshair;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid {
+    display: flex;
+    min-height: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    width: 100%;
+}
+
+.align-content-center {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+
+}
+
+.col-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 667px;
+}
+
+.btn.btn-primary {
+    width: fit-content;
+    padding: 8px 20px;
+    border: 1px solid white;
+    background: transparent;
+    margin-top: 90px;
+    font-weight: bold;
+}
+
+.btn.btn-primary:hover {
+    background-color: #FFF;
+    color: #171717;
+    transition: background-color 250ms ease;
+}
+
+.btn.btn-primary:focus {
+    background-color: transparent;
+    box-shadow: inherit;
+}
+
+@media only screen and (max-width: 425px) {
+
+    body {
+        height: 95vh;
+        width: 100vw;
+        max-height: 95vh;
+        overflow: hidden;
+        position: fixed;
+    }
+
+    h1.text-center {
+        font-size: 1.5em;
+    }
+
+    img {
+        max-width: 95vw;
+    }
+
+    .btn.btn-primary {
+        margin-top: 90px;
+    }
+}
